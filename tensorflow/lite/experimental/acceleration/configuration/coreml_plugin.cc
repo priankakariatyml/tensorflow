@@ -67,6 +67,10 @@ class CoreMLPlugin : public DelegatePluginInterface {
 
 TFLITE_REGISTER_DELEGATE_FACTORY_FUNCTION(CoreMLPlugin, CoreMLPlugin::New);
 
+void register_new() {
+  std::cout << "Manually Triggering Coreml Plugin Registration" << std::endl;
+}
+
 }  // namespace delegates
 }  // namespace tflite
 
